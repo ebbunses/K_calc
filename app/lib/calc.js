@@ -26,7 +26,7 @@ export function progressiveIncomeTax(taxBase) {
   return 384_060_000 + (taxBase - 1_000_000_000) * 0.45;
 }
 
-// 자녀 세액공제 (2024년 기준, 8세 이상 자녀에 적용)
+// 자녀 세액공제 (현행 기준, 8세 이상 자녀에 적용)
 function childTaxCredit(childCount) {
   const n = Math.max(0, childCount | 0);
   if (n === 0) return 0;

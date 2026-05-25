@@ -41,7 +41,7 @@ export const metadata = {
     siteName: "K Calc",
     title: "K Calc — 한국형 종합 계산기",
     description:
-      "연봉 실수령액·퇴직금·대출이자·적금 만기를 한 번에. 2025 기준으로 정확하게 계산.",
+      "연봉 실수령액·퇴직금·대출이자·적금 만기를 한 번에. 현행 세법·요율로 정확하게 계산.",
   },
   robots: {
     index: true,

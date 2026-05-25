@@ -115,7 +115,7 @@ export default function SalaryCalculator() {
           </label>
 
           <p className="text-xs text-ink-muted leading-relaxed">
-            * 2024년 세법·4대보험 요율 기준. 실제 회사에서 적용하는 비과세
+            * 현행 세법·4대보험 요율 기준. 실제 회사에서 적용하는 비과세
             항목(자가운전보조금, 연구개발비 등)이 있으면 실수령액은 더 높을 수
             있습니다.
           </p>

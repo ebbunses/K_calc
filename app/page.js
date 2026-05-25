@@ -5,7 +5,7 @@ import { calculators } from "./lib/calculators";
 export const metadata = {
   title: "K Calc — 한국형 종합 계산기",
   description:
-    "연봉 실수령액, 퇴직금, 대출 이자, 적금 만기까지. 2025년 한국 세법과 4대 보험 기준으로 정확하게 계산하는 무료 종합 계산기.",
+    "연봉 실수령액, 퇴직금, 대출 이자, 적금 만기까지. 한국 세법과 4대 보험 현행 기준으로 정확하게 계산하는 무료 종합 계산기.",
   alternates: { canonical: "/" },
 };
 
@@ -15,7 +15,7 @@ export default function Home() {
       <section className="pt-16 md:pt-24 pb-10 md:pb-16">
         <div className="max-w-3xl">
           <p className="text-xs uppercase tracking-[0.2em] text-accent mb-5">
-            Korean Calculators · 2025
+            Korean Calculators · 2026
           </p>
           <h1 className="font-display text-5xl md:text-7xl leading-[1.05] text-ink">
             계산은 정확하게,
