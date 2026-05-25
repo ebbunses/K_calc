@@ -11,16 +11,22 @@ export default function Header() {
             Korean Calculators
           </span>
         </Link>
-        <nav className="flex items-center gap-1 sm:gap-3 text-sm">
+        <nav className="flex items-center gap-0.5 sm:gap-2 text-sm">
           {calculators.map((c) => (
             <Link
               key={c.slug}
               href={c.href}
-              className="px-2.5 py-1.5 rounded-md text-ink-soft hover:text-accent hover:bg-accent-light transition-colors"
+              className="px-2 sm:px-2.5 py-1.5 rounded-md text-ink-soft hover:text-accent hover:bg-accent-light transition-colors"
             >
               {c.title}
             </Link>
           ))}
+          <Link
+            href="/guides"
+            className="px-2 sm:px-2.5 py-1.5 rounded-md text-ink-soft hover:text-accent hover:bg-accent-light transition-colors"
+          >
+            머니 팁
+          </Link>
         </nav>
       </div>
     </header>

@@ -1,5 +1,6 @@
 import SalaryCalculator from "./SalaryCalculator";
 import FaqSection from "../components/FaqSection";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata = {
   title: "연봉 실수령액 계산기 — 부양가족·비과세 식대 반영",
@@ -220,7 +221,11 @@ export default function SalaryPage() {
 
       <FaqSection items={FAQ_ITEMS} />
 
-      <section className="max-w-3xl mt-16 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
+      <div className="my-16" />
+
+      <RelatedGuides category="salary" />
+
+      <section className="max-w-3xl mt-8 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
         <p>
           본 계산기는 일반적인 직장인 사례를 기준으로 한 추정치를 제공합니다.
           정확한 금액은 회사의 급여명세서와 국세청 홈택스의 연말정산 결과를

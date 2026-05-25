@@ -36,6 +36,11 @@ export default function Footer() {
           </div>
           <ul className="space-y-2 text-sm">
             <li>
+              <Link href="/guides" className="text-ink-soft hover:text-accent transition-colors">
+                머니 팁
+              </Link>
+            </li>
+            <li>
               <Link href="/about" className="text-ink-soft hover:text-accent transition-colors">
                 사이트 소개
               </Link>

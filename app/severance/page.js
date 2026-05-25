@@ -1,5 +1,6 @@
 import SeveranceCalculator from "./SeveranceCalculator";
 import FaqSection from "../components/FaqSection";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata = {
   title: "퇴직금 계산기 — 퇴직소득세 포함 실수령액",
@@ -259,7 +260,11 @@ export default function SeverancePage() {
 
       <FaqSection items={FAQ_ITEMS} />
 
-      <section className="max-w-3xl mt-16 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
+      <div className="my-16" />
+
+      <RelatedGuides category="severance" />
+
+      <section className="max-w-3xl mt-8 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
         <p>
           본 계산기의 결과는 추정치이며, 실제 회사 또는 노동부에서 산정한
           금액과 일부 차이가 발생할 수 있습니다. 정확한 평균임금 산정과

@@ -1,5 +1,6 @@
 import LoanCalculator from "./LoanCalculator";
 import FaqSection from "../components/FaqSection";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata = {
   title: "대출 이자 계산기 — 원리금균등·원금균등·만기일시 비교",
@@ -225,7 +226,11 @@ export default function LoanPage() {
 
       <FaqSection items={FAQ_ITEMS} />
 
-      <section className="max-w-3xl mt-16 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
+      <div className="my-16" />
+
+      <RelatedGuides category="loan" />
+
+      <section className="max-w-3xl mt-8 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
         <p>
           본 계산기의 결과는 참고용입니다. 실제 대출 시에는 보증료, 인지세,
           근저당설정비 등 부대비용과 우대금리·중도상환수수료가 적용되어

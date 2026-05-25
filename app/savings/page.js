@@ -1,5 +1,6 @@
 import SavingsCalculator from "./SavingsCalculator";
 import FaqSection from "../components/FaqSection";
+import RelatedGuides from "../components/RelatedGuides";
 
 export const metadata = {
   title: "적금·정기예금 계산기 — 단리·복리·비과세 지원",
@@ -226,7 +227,11 @@ export default function SavingsPage() {
 
       <FaqSection items={FAQ_ITEMS} />
 
-      <section className="max-w-3xl mt-16 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
+      <div className="my-16" />
+
+      <RelatedGuides category="savings" />
+
+      <section className="max-w-3xl mt-8 pb-16 md:pb-24 text-sm text-ink-muted leading-relaxed">
         <p>
           본 계산기는 일반적인 상품 구조를 기준으로 한 추정치입니다. 우대금리
           조건(자동이체, 카드 사용 실적 등), 만기 후 거치 이자율, 중도해지
