@@ -1,7 +1,10 @@
 import { Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
+const ADSENSE_CLIENT = "ca-pub-1603575032759465";
 
 const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
@@ -17,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://k-calc.com"),
+  metadataBase: new URL("https://kcalc.kr"),
   title: {
     default: "K Calc — 한국형 종합 계산기",
     template: "%s | K Calc",
@@ -35,7 +38,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    url: "https://k-calc.com",
+    url: "https://kcalc.kr",
     siteName: "K Calc",
     title: "K Calc — 한국형 종합 계산기",
     description:
@@ -68,6 +71,12 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="flex-1 w-full">{children}</main>
         <Footer />
+        <Script
+          async
+          strategy="afterInteractive"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
