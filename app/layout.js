@@ -1,5 +1,4 @@
 import { Instrument_Serif, JetBrains_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -66,17 +65,17 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
         />
+        <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-full flex flex-col bg-bg text-ink">
         <Header />
         <main className="flex-1 w-full">{children}</main>
         <Footer />
-        <Script
-          async
-          strategy="afterInteractive"
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-          crossOrigin="anonymous"
-        />
       </body>
     </html>
   );
