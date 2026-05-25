@@ -66,6 +66,10 @@ export default function RootLayout({ children }) {
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
         />
         <meta name="google-adsense-account" content={ADSENSE_CLIENT} />
+        <meta
+          name="naver-site-verification"
+          content="a01599783dc687556301e61e041774d6ff864232"
+        />
         <script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
